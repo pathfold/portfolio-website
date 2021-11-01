@@ -11,13 +11,14 @@ export default class Header extends React.Component {
     
     render() {
         return (
-            <div class="project">
-                <img class="project-img" src={this.props.imgSrc} data-aos="fade-up" data-aos-duration="1000"/>
+            <div class="project"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <img class="project-img" src={this.props.imgSrc}/>
                 <div class="project-info">
-                    <h2 class="project-title" data-aos="fade-up" data-aos-duration="1000">{this.props.title}</h2>
-                    <p class="project-desc" data-aos="fade-up" data-aos-duration="1000">{this.props.desc}</p>
-                    <div data-aos="fade-up" data-aos-duration="1000" >
-                        <a class="project-link btn-light" href="/">
+                    <h2 class="project-title">{this.props.title}</h2>
+                    <h5 class="project-brief"><em>{this.props.brief}</em></h5>
+                    <p class="project-desc">{this.props.desc}</p>
+                    <div>
+                        <a class="project-link btn-light" target="_blank" rel="noopener noreferrer" href={this.props.link}>
                             See on GitHub
                             <img/>
                         </a>

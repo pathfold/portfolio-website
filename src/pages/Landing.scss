@@ -34,7 +34,7 @@
         font-weight: 900;
         font-size: 80px;
         color: rgb(255, 243, 149);
-        //background-color: black;
+        //color: rgb(255, 200, 149);
         line-height: 75px;
     }
 
@@ -58,8 +58,8 @@
 
     &-right-img {
         border-radius: 300px;
-        width: 400px;
-        height: 400px; 
+        width: 500px;
+        height: 500px; 
     }
 }
 
@@ -98,6 +98,63 @@
     }
 }
 
+.aboutme {
+    padding: 7rem 5rem 0 5rem;
+    text-align: center;
+
+    &-margin {
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1060px;
+    }
+
+    &-header {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    &-divider {
+        display: inline-block;
+    }
+
+    &-info {
+        max-width: 65%;
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-img {
+        width: 300px;
+        height: 300px;
+        border-radius: 250px;
+        margin-right: 3rem;
+    }
+
+    &-text {
+        font-size: 20px;
+        font-weight: 100;
+    }
+}
+
+@media (max-width: 1225px) {
+    .aboutme {
+        &-img {
+            margin-right: 0;
+        }
+
+        &-text {
+            margin-top: 2rem;
+        }
+
+        &-info {
+            flex-wrap: wrap;
+        }
+    }
+}
+
 @media (max-width: 1000px) {
     .hero-right-img {
         display: none;
@@ -117,7 +174,14 @@
         padding: 0 2rem;
     }
 
-    .projects {
+    .projects, .aboutme {
         padding: 7rem 2rem 0 2rem;
+    }
+
+    .aboutme {
+        &-img {
+            width: 200px;
+            height: 200px;
+        }
     }
 }

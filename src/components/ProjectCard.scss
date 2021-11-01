@@ -12,10 +12,17 @@
 
     &-title {
         font-size: 30px;
+        line-height: 40px;
+    }
+
+    &-brief {
+        font-weight: 300;
+        font-size: 20px;
     }
 
     &-desc {
         font-weight: 100;
+        margin-top: 1.25rem;
     }
 
     &-link {
@@ -26,7 +33,7 @@
         transition: .5s;
 
         &:hover {
-            background: black;
+            background: rgb(54, 54, 54);
             color: white;
         }
     }
