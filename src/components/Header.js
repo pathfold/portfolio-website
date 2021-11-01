@@ -10,9 +10,9 @@ export default class Header extends React.Component {
                         <a class="nav-logo-text" href="/">JK</a>
                     </div>
                     <ul class="nav-list">
-                        <li class="nav-item"><a class="nav-link" href="#header">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#header">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#header">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
                     </ul>
                 </div>
             </header>

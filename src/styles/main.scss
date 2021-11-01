@@ -40,12 +40,18 @@ h1 {
   margin: 0;
 }
 
-.btn {
+.btn-light {
   border: 2px solid black;
+  color: black;
+}
+
+.btn-dark {
+  border: 2px solid #636a6f;
+  color: white;
 }
 
 .divider {
-  background-color: #E9C396;
+  background-color: rgb(153, 96, 27);
   width: 100px;
   height: 5px;
 }
