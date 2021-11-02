@@ -57,7 +57,7 @@ export default class Header extends React.Component {
                         <div class="aboutme-divider divider" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" data-aos-once="true"></div>
                         <div class="aboutme-info"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
                             <img class="aboutme-img" src={headImg}/>
-                            <p class="aboutme-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p class="aboutme-text">Hi, I'm Justin. I am currently studying Computer Science at Rensselaer Polytechnic Institute. I have a passion for anything full-stack development and I've worked with technologies like React, MongoDB, Express.js, and Flask before. Outside of work, I love playing the piano and binging Netflix.</p>
                         </div>
                     </div>
                 </div>
