@@ -190,6 +190,14 @@
         &-text-btn {
             padding: 0.5rem 2rem;
         }
+
+        &-margin {
+            @supports (-webkit-appearance:none) {
+                .os-android & {
+                  min-height: calc(100vh - 56px);
+                }
+              }
+        }
     }
 
     .projects, .aboutme {
