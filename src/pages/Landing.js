@@ -33,7 +33,7 @@ export default class Header extends React.Component {
                             </div>
                         </div>
                         <div class="hero-right">
-                            <img class="hero-right-img" src={heroImg} data-aos="fade-up" data-aos-delay="450" data-aos-duration="1500" data-aos-once="true"></img>
+                            <img class="hero-right-img" src={heroImg} alt="computer with code" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1500" data-aos-once="true"></img>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ export default class Header extends React.Component {
                         <h1 class="aboutme-header" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">About Me</h1>
                         <div class="aboutme-divider divider" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" data-aos-once="true"></div>
                         <div class="aboutme-info"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
-                            <img class="aboutme-img" src={headImg}/>
+                            <img class="aboutme-img" src={headImg} alt="justin kwong"/>
                             <p class="aboutme-text">Hi, I'm Justin. I am currently studying Computer Science at Rensselaer Polytechnic Institute. I have a passion for anything full-stack development and I've worked with technologies like React, MongoDB, Express.js, and Flask before. Outside of work, I love playing the piano and binging Netflix.</p>
                         </div>
                     </div>
