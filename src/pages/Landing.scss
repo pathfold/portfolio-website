@@ -173,6 +173,7 @@
     }
 }
 
+//mobile devices
 @media (max-width: 450px) {
     .hero {
         padding: 0 2rem;
@@ -200,6 +201,11 @@
             width: 200px;
             height: 200px;
         }
+
+        &-header {
+            font-size: 52px;
+            line-height: 50px;
+        }
     }
 
     .projects {
@@ -212,6 +218,11 @@
         &-divider {
             display: inline-block;
             margin-left: 0;
+        }
+
+        &-header {
+            font-size: 52px;
+            line-height: 50px;
         }
     }
 }
