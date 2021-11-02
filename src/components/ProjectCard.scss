@@ -41,6 +41,13 @@
 
 @media (max-width: 430px) {
     .project {
+        text-align: center;
+
+        &-img {
+            max-width: 80%;
+            display: inline-block;
+        }
+
         &-info {
             max-width: 75%;
         }
