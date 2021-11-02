@@ -9,7 +9,11 @@ export default class Header extends React.Component {
                     <div class="nav-logo">
                         <a class="nav-logo-text" href="/">JK</a>
                     </div>
-                    <ul class="nav-list"></ul>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" style={{color: `rgb(255, 243, 149)`}} href="#resume">Resume</a></li>
+                    </ul>
                 </div>
             </header>
         );
