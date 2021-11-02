@@ -165,6 +165,7 @@
 
     .hero-margin {
         justify-content: center;
+        flex-direction: column; //prevents lower text from wrapping at around 450
     }
 
     .hero-left {
@@ -197,6 +198,7 @@
 
         &-divider {
             display: inline-block;
+            margin-left: 0;
         }
     }
 }
