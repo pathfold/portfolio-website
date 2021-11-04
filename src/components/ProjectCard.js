@@ -10,7 +10,7 @@ export default class Header extends React.Component {
     
     render() {
         return (
-            <div class="project"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <div class="project">
                 <img class="project-img" src={this.props.imgSrc} alt="project"/>
                 <div class="project-info">
                     <h2 class="project-title">{this.props.title}</h2>

@@ -5,6 +5,7 @@ import "./Landing.scss";
 import "aos/dist/aos.css";
 
 import ProjectCard from "../components/ProjectCard";
+import Header from "../components/Header";
 
 import heroImg from "../images/heroImg.png";
 import mirrur from "../images/mirrur.jpeg";
@@ -13,7 +14,27 @@ import tmk from "../images/tmk.jpg";
 import wtw from "../images/wtw.jpg";
 import headImg from "../images/headImg.jpg";
 
-export default class Header extends React.Component {
+export default class Landing extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            menuState: "close"
+        };
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick = (e) => {
+        if (this.state.menuState === "open") {
+            this.setState({menuState: "close"});
+        }
+        else {
+            this.setState({menuState: "open"});
+        }
+        console.log("The menuState state is now " + this.state.menuState);
+    }
+
     componentDidMount() {
         Aos.init();
         this.props.updateTitle("Justin Kwong")
@@ -22,6 +43,15 @@ export default class Header extends React.Component {
     render() {
         return (
             <div>
+                <Header handleClick={this.handleClick}/>
+                {this.state.menuState === "open" && <div class="menu" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <ul class={"menu-list " + this.state.menuState}>
+                        <li class="menu-item"><a class="menu-link" href="#projects">Projects</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#aboutme">About Me</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#resume">Resume</a></li>
+                    </ul>
+                </div> }
+
                 <div class="hero">
                     <div class="hero-margin">
                         <div class="hero-left">
@@ -39,7 +69,7 @@ export default class Header extends React.Component {
                 </div>
                 
                 <div class="projects" id="projects">
-                    <div class="projects-margin">
+                    <div class="projects-margin" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                         <h1 class="projects-header" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Projects</h1>
                         <div class="projects-divider divider" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" data-aos-once="true"></div>
                         <div class="projects-details">
@@ -57,7 +87,7 @@ export default class Header extends React.Component {
                         <div class="aboutme-divider divider" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" data-aos-once="true"></div>
                         <div class="aboutme-info"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
                             <img class="aboutme-img" src={headImg} alt="justin kwong"/>
-                            <p class="aboutme-text">Hi, I'm Justin. I am currently studying Computer Science at Rensselaer Polytechnic Institute. I have a passion for anything full-stack development and I've worked with technologies like React, MongoDB, Express.js, and Flask before. Outside of work, I love playing the piano and binging Netflix.</p>
+                            <p class="aboutme-text">Hi, I'm Justin. I am currently studying Computer Science at Rensselaer Polytechnic Institute. I have a passion for anything full-stack development and I've worked with technologies like React, MongoDB, Express.js, and Flask before. Outside of work, I love binging Netflix and playing indie pop songs on the piano.</p>
                         </div>
                     </div>
                 </div>

@@ -14,6 +14,11 @@ export default class Header extends React.Component {
                         <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
                         <li class="nav-item"><a class="nav-link" style={{color: `rgb(255, 243, 149)`}} href="#resume">Resume</a></li>
                     </ul>
+                    <div class="nav-menu" onClick={this.props.handleClick}>
+                        <div class="nav-bar"></div>
+                        <div class="nav-bar"></div>
+                        <div class="nav-bar"></div>
+                    </div>
                 </div>
             </header>
         );

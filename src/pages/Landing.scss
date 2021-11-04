@@ -1,3 +1,40 @@
+.menu {
+    height: 100%;
+    position: fixed;
+    z-index: 50;
+    top: 74px;
+    right: 0;
+    background-color: #171A1B;
+    overflow-x: hidden;
+    
+    padding: 1rem;
+    border-left: 1px solid rgb(56, 56, 56);
+    text-align: center;
+
+    &-item {
+        padding: 1rem;
+    }
+
+    &-link {
+        font-weight: 900;
+        font-size: 20px;
+        color: white;
+
+        &-hover {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.close {
+    width: 0px;
+}
+
+.open {
+    width: 150px;
+}
+
 .hero {
     padding: 0 5rem;
     background-color: #171A1B;
@@ -158,6 +195,42 @@
     }
 }
 
+@media (max-width: 1150px) {
+    .aboutme {
+        &-img  {
+            width: 220px;
+            height: 220px;
+        }
+
+        &-text {
+            font-size: 17px;
+        }
+
+        &-header {
+            font-size: 52px;
+            line-height: 50px;
+        }
+    }
+
+    .projects {
+        &-header {
+            font-size: 52px;
+            line-height: 50px;
+        }
+    }
+
+    .hero {
+        &-text-top {
+            font-size: 50px;
+        }
+
+        &-text-bottom {
+            font-size: 65px;
+            line-height: 60px;
+        }
+    }
+}
+
 @media (max-width: 1000px) {
     .hero-right-img {
         display: none;
@@ -177,7 +250,7 @@
 @media (max-width: 450px) {
     .hero {
         padding: 0 2rem;
-
+        /*
         &-text-top {
             font-size: 50px;
         }
@@ -186,7 +259,7 @@
             font-size: 65px;
             line-height: 60px;
         }
-
+        */
         &-text-btn {
             padding: 0.5rem 2rem;
         }

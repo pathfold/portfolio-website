@@ -1,6 +1,5 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import Header from "./components/Header"
 import Landing from "./pages/Landing"
 import "./styles/main.scss";
 
@@ -19,7 +18,6 @@ export default class App extends React.Component {
 
     return (
       <BrowserRouter>
-        <Header />
         <Switch>
           <Route>
             <Landing updateTitle={this.updateTitle}/>

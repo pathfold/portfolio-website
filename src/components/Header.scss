@@ -2,18 +2,33 @@
     position: fixed;
     width: 100%;
     z-index: 50;
-    padding: 1vh 1rem;
+    padding: 7px 1rem;
     background-color: #171A1B;
 }
 
 .nav {
     height: 60px;
-    max-width: 100vw;
+    max-width: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1350px;
+
+    &-menu {
+        cursor: pointer;
+    }
+
+    &-bar {
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        margin: 8px 0;
+    }
+
+    &-menu {
+        display: none;
+    }
 }
 
 .nav-list {
@@ -68,5 +83,17 @@
 
     &:hover {
         color:white;
+    }
+}
+
+@media (max-width: 1000px) {
+    .nav {
+        &-list {
+            display: none;
+        }
+
+        &-menu {
+            display: block;
+        }
     }
 }
