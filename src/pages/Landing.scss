@@ -20,7 +20,7 @@
         font-size: 20px;
         color: white;
 
-        &-hover {
+        &:hover {
             text-decoration: none;
             color: white;
         }
@@ -54,7 +54,7 @@
     }
 
     &-margin {
-        min-height: 100vh;
+        min-height: 100%;
         align-items: center;
         display: flex;
         margin: 0 auto;

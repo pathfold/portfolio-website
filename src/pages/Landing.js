@@ -42,7 +42,7 @@ export default class Landing extends React.Component {
 
     render() {
         return (
-            <div>
+            <div style={{height: `100%`}}>
                 <Header handleClick={this.handleClick}/>
                 {this.state.menuState === "open" && <div class="menu" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
                     <ul class={"menu-list " + this.state.menuState}>
@@ -52,7 +52,7 @@ export default class Landing extends React.Component {
                     </ul>
                 </div> }
 
-                <div class="hero">
+                <div class="hero" style={{height: `100%`}}>
                     <div class="hero-margin">
                         <div class="hero-left">
                             <h2 class="hero-text-top" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Hi, I'm</h2>
