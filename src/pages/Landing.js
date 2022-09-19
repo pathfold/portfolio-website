@@ -14,6 +14,8 @@ import tmk from "../images/tmk.jpg";
 import wtw from "../images/wtw.jpg";
 import headImg from "../images/headImg.jpg";
 
+import { animalRescueData, mirrurData, wtwData, tmkData } from "../data/projectInfo";
+
 export default class Landing extends React.Component {
     constructor(props) {
         super(props);
@@ -73,10 +75,10 @@ export default class Landing extends React.Component {
                         <h1 class="projects-header" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Projects</h1>
                         <div class="projects-divider divider" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" data-aos-once="true"></div>
                         <div class="projects-details">
-                            <ProjectCard imgSrc={animalRescue} title="Animal Rescue" brief="Dynamic Data Parser for Non-Profit organization" link="/" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
-                            <ProjectCard imgSrc={mirrur} title="Mirrur" brief="Natural Language Processing Chatbot" link="https://github.com/jshom/mirrur" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
-                            <ProjectCard imgSrc={wtw} title="What's The Wave" brief="College Social-Event Finder" link="https://github.com/antmcgrann/whatsthewave" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
-                            <ProjectCard imgSrc={tmk} title="TMK Groups" brief="Real-Estate Photography Portfolio" link="https://github.com/pathfold/tmkgroups" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+                            <ProjectCard imgSrc={animalRescue} title="Animal Rescue" brief="Dynamic Data Parser for Non-Profit organization" desc={animalRescueData}/>
+                            <ProjectCard imgSrc={mirrur} title="Mirrur" brief="Natural Language Processing Chatbot" showLink={true} link="https://github.com/jshom/mirrur" desc={mirrurData}/>
+                            <ProjectCard imgSrc={wtw} title="What's The Wave" brief="College Social-Event Finder" showLink={true} link="https://github.com/antmcgrann/whatsthewave" desc={wtwData}/>
+                            <ProjectCard imgSrc={tmk} title="TMK Groups" brief="Real-Estate Photography Portfolio" showLink={true} link="https://github.com/pathfold/tmkgroups" desc={tmkData}/>
                         </div>
                     </div>
                 </div>
