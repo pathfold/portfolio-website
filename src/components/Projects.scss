@@ -1,0 +1,36 @@
+.projects {
+    padding: 7rem 5rem 5rem 5rem;
+    background-color: var(--background-dark2);
+
+    &-header {
+        font-size: 60px;
+        line-height: 70px;
+        color: var(--light-text);
+    }
+
+    &-margin {
+        align-items: center;
+        //display: flex;
+        margin: 0 auto;
+        max-width: 1060px;
+    }
+
+    &-divider {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    &-details {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        place-content: center;
+        gap: 5rem;
+        margin-top: 3rem;
+    }
+
+    &-card {
+        //width: 50%;
+        height: 500px;
+    }
+}

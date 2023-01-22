@@ -18,7 +18,7 @@ export default class ProjectCard extends React.Component {
                     <p class="project-desc">{this.props.desc}</p>
                     {(this.props.showLink) && 
                         <div>
-                            <a class="project-link btn-light" target="_blank" rel="noopener noreferrer" href={this.props.link || "/"}>
+                            <a class="project-link btn-dark" target="_blank" rel="noopener noreferrer" href={this.props.link || "/"}>
                                 See on GitHub
                             </a>
                         </div>}
