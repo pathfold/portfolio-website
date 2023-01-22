@@ -1,5 +1,7 @@
 import React from "react";
 import Aos from "aos";
+
+import "./AboutMe.scss";
 import "aos/dist/aos.css";
 
 import headImg from "../images/headImg.jpg";

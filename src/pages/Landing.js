@@ -10,6 +10,8 @@ import Hero from "../components/Hero";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 
+import resumePdf from "../docs/resumePdf.pdf";
+
 export default class Landing extends React.Component {
     constructor(props) {
         super(props);
@@ -44,7 +46,7 @@ export default class Landing extends React.Component {
                     <ul class={"menu-list " + this.state.menuState}>
                         <li class="menu-item"><a class="menu-link" href="#projects">Projects</a></li>
                         <li class="menu-item"><a class="menu-link" href="#aboutme">About Me</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#resume">Resume</a></li>
+                        <li class="menu-item"><a class="menu-link" href={resumePdf} target="_blank">Resume</a></li>
                     </ul>
                 </div> }
                 
