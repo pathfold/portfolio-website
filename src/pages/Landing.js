@@ -46,7 +46,7 @@ export default class Landing extends React.Component {
                     <ul class={"menu-list " + this.state.menuState}>
                         <li class="menu-item"><a class="menu-link" href="#projects">Projects</a></li>
                         <li class="menu-item"><a class="menu-link" href="#aboutme">About Me</a></li>
-                        <li class="menu-item"><a class="menu-link" href={resumePdf} target="_blank">Resume</a></li>
+                        <li class="menu-item"><a class="menu-link" href={resumePdf} target="_blank" rel="noreferrer">Resume</a></li>
                     </ul>
                 </div> }
                 
